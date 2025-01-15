@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  job-runner-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5071:80"  # Map host port 5071 to container port 80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80  # Ensure the app listens on port 80 inside the container
+      - Redis__ConnectionString=redis:6379
+    depends_on:
+      - redis
+    networks:
+      - job-network
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - job-network
+
+networks:
+  job-network:
+    driver: bridge
