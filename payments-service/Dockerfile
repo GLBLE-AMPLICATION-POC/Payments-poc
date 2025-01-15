@@ -15,4 +15,4 @@ COPY --from=build /app/out .
 
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "JobRunnerService.dll"]
+ENTRYPOINT ["dotnet", "payments-service.dll"]

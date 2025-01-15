@@ -1,4 +1,4 @@
-namespace JobRunnerService.Models
+namespace payments-service.Models
 {
     public enum JobStatus
     {

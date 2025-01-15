@@ -1,4 +1,4 @@
-# amplication-poc
+# payments-service
 Repository to proof-of-concept the ability to manage and auto update template and services with Amplication.com
 
 Definition:
@@ -12,7 +12,7 @@ PreRequisite:
  - Redis in container: use docker-compose file to run Redis in container on the predefined port.
 
 Running service locally with debug:
- - Run JobRunnerService locally in debug mode
+ - Run payments-service locally in debug mode
  - In Broswer go to `HTTP/1.1 GET http://localhost:5071/` and swagger page would be shown
  - Perform HTTP Post request to create and execute job  [`POST http://localhost:5071/api/v1/Jobs`]
  - Perform HTTP Get request to het job execution status [`GET http://localhost:5071/api/v1/Jobs/e6269b7a-7621-4e73-87b4-a26303e64c26`]

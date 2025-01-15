@@ -1,7 +1,7 @@
 using StackExchange.Redis;
 using Microsoft.Extensions.Configuration;
 
-namespace JobRunnerService.Data
+namespace payments-service.Data
 {
     public class RedisContext
     {

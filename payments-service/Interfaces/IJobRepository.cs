@@ -1,4 +1,4 @@
-using JobRunnerService.Models;
+using payments-service.Models;
 
 namespace JobRunnerService.Interfaces
 {
