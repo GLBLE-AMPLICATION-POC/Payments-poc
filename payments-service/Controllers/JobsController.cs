@@ -1,4 +1,4 @@
-using JobRunnerService.Interfaces;
+using payments-service.Interfaces;
 using JobRunnerService.Models;
 using JobRunnerService.Services;
 using Microsoft.AspNetCore.Mvc;

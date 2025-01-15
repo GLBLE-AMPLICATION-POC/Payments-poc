@@ -1,6 +1,6 @@
 using System;
 
-namespace JobRunnerService.Models
+namespace payments-service.Models
 {
     public class Job
     {

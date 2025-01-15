@@ -1,4 +1,4 @@
-using JobRunnerService.Data;
+using payments-service.Data;
 using JobRunnerService.Repositories;
 using JobRunnerService.Services;
 using JobRunnerService.Interfaces;
